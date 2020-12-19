@@ -1,0 +1,46 @@
+body {
+  background: gray;
+  
+}
+header {
+  background: none;
+  text-align: center;
+  font-family: arial;
+}
+
+section {
+  background: white;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  
+  
+  
+}
+footer {
+  background: none;
+  text-align: center;
+}
+
+.horario {
+  background: none;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.imagem {
+  background:silver ;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50%;
+  margin: auto;
+}
+.imagem img {
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50%;
+  margin: auto;
+}

@@ -1,29 +1,22 @@
 function mostrar() {
-  var atual = new Date();
-  var horario = atual.getHours();
-  var minutos = atual.getMinutes();
-  var dia = document.getElementById('dia')
-  var tarde = document.getElementById('tarde')
-  var noite = document.getElementById('noite')
-  var total = atual.getHours()
+  var mensagem = document.getElementById('mensagem')
+  var imagem = document.getElementById('imagem')
+  var data = new Date();
+  var hora = data.getHours();
+  var minutos = data.getMinutes();
 
-  var informacao = document.getElementById('horario')
-
-  informacao.innerHTML = `Bom dia! Agora são ${total} horas`
-
-
-
-  if (horario >= 0 && horario < 12) {
-    informacao.innerHTML = `Bom dia! Agora são ${total}:${minutos} horas`
-    dia.style.display="block"
+  
+  if (hora >= 0 && hora < 12) {
+    mensagem.innerHTML = `Bom dia! Agora são ${hora}:${minutos} horas`
+    imagem.src = "./image/dia.jpg"
     document.body.style.background = "#e2cd9f"
-  }else if(horaio < 18){
-    informacao.innerHTML = `Boa tarde! Agora são ${horario}:${minutos} horas`
-    tarde.style.display="block"
+  }else if(hora >= 12 && hora < 18){
+    mensagem.innerHTML = `Boa tarde! Agora são ${hora}:${minutos} horas`
+    imagem.src = "./image/tarde.jpg"
     document.body.style.background = "#b98496f"
   }else{
-    informacao.innerHTML = `Boa noite! Agora são ${horario}:${minutos} horas`
-    noite.style.display="block"
+    mensagem.innerHTML = `Boa noite! Agora são ${hora}:${minutos} horas`
+    imagem.src = "./image/noite.jpg"
     document.body.style.background = "#515154"
   }
 

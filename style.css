@@ -23,7 +23,7 @@ footer {
   text-align: center;
 }
 
-.horario {
+.mensagem {
   background: none;
   margin: 30px;
   padding: 10px;
@@ -38,7 +38,6 @@ footer {
   margin: auto;
 }
 .imagem img {
-  display: none;
   width: 200px;
   height: 200px;
   border-radius: 50% 50%;
